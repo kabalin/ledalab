@@ -24,6 +24,7 @@ leda2.gui.menu.menu_1b11 = uimenu(leda2.gui.menu.menu_1b,'Label','Text Type 1 [T
 leda2.gui.menu.menu_1b12 = uimenu(leda2.gui.menu.menu_1b,'Label','Text Type 2 [SC (Marker)]','Callback','import_data(''text2'');');
 leda2.gui.menu.menu_1b13 = uimenu(leda2.gui.menu.menu_1b,'Label','Text Type 3 (Manual definition)','Callback','import_data(''text3'');');
 leda2.gui.menu.menu_1b14 = uimenu(leda2.gui.menu.menu_1b,'Label','User-defined Data','Callback','import_data(''userdef'');','Enable','off');
+leda2.gui.menu.menu_1b15 = uimenu(leda2.gui.menu.menu_1b,'Label','SCMD (.scd)','Callback','import_data(''scmd'');');
 
 leda2.gui.menu.menu_1c = uimenu(leda2.gui.menu.menu_1,'Label','Import Events...'); %,'Accelerator','i'
 leda2.gui.menu.menu_1c1 = uimenu(leda2.gui.menu.menu_1c,'Label','Load New Event Markers (and DELETE exisiting ones)','Callback','import_eventdata(''default'')');

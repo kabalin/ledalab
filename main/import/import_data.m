@@ -18,6 +18,7 @@ switch datatype
     case 'text', ext = {'*.txt'};
     case 'text2', ext = {'*.txt'};
     case 'text3', ext = {'*.txt'};
+    case 'scmd', ext = {'*.scd'};
         
     otherwise
         if leda2.intern.prompt
@@ -92,7 +93,10 @@ try
             
         case 'userdef'
             [time, conductance, event] = getuserdefdata(file);
-            
+
+        case 'scmd'
+            [time, conductance, event] = getScmdData(file);
+
     end
     
 catch
