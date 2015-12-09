@@ -19,7 +19,7 @@ while  ~feof(fid)
             iEvent = iEvent + 1;
             event(iEvent).time = timestr;
             event(iEvent).nid = iEvent;
-            event(iEvent).name = strcat(char(line{1}(2)),'-',char(line{1}(3)));
+            event(iEvent).name = strcat(char(line{1}(2)),'-',char(line{1}(3)),'_',char(line{1}(4)));
             event(iEvent).userdata = char(line{1}(4));
         else
             iLine = iLine + 1;
